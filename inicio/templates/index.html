@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html  >
+    <head>
+        {% load static %}
+        <!-- Site made with Mobirise Website Builder v5.3.5, https://mobirise.com -->
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="generator" content="Mobirise v5.3.5, mobirise.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+        <link rel="shortcut icon" href="{% static 'assets/images/logo.png' %}" type="image/x-icon">
+        <meta name="description" content="">
+        
+        
+        <title>Gestão de pedidos</title>
+        <link rel="stylesheet" href="{% static 'assets/web/assets/mobirise-icons2/mobirise2.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/tether/tether.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-grid.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-reboot.min.css' %}">
+        <!--Estilo do Formulário-->
+        <link rel="stylesheet" href="{% static 'assets/formstyler/jquery.formstyler.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/formstyler/jquery.formstyler.theme.css' %}">
+        <!---->
+        <link rel="stylesheet" href="{% static 'assets/dropdown/css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/socicon/css/styles.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/datepicker/jquery.datetimepicker.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/theme/css/style.css' %}">
+        <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+        <link rel="preload" as="style" href="{% static 'ssets/mobirise/css/mbr-additional.css' %}"><link rel="stylesheet" href="{% static 'assets/mobirise/css/mbr-additional.css' %}" type="text/css">
+
+        
+    
+    
+    
+    
+    </head>
+    <body>
+    
+        <section class="menu cid-s48OLK6784" once="menu" id="menu1-h">
+            
+            <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+                <div class="container">
+                    <div class="navbar-brand">
+                        
+                        <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-7" href="{% url 'inicio' %}">Gestão de Pedidos</a></span>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black display-4" href="{% url 'inicio' %}">Início</a></li>
+                            <li class="nav-item"><a class="nav-link link text-black display-4" href="{% url 'serviços' %}">Serviços</a></li><li class="nav-item"><a class="nav-link link text-black display-4" href="{% url 'contacto' %}">Contactos</a></li><li class="nav-item"><a class="nav-link link text-black display-4" href="{% url 'blog' %}">Blog</a></li></ul>
+                        
+                        
+                    </div>
+                </div>
+            </nav>
+
+        </section>
+        {% block content %}
+        <!--Aqui está a ser utlizado um conteúdo dinâmico-->
+        {% endblock %}
+
+        <section class="footer1 cid-sIkI3YL3gj" once="footers" id="footer1-l">
+
+            
+        
+            <div class="container">
+                <div class="row mbr-white">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7"><strong>Informação útil</strong></h5>
+                        <ul class="list mbr-fonts-style display-4">
+                            <li class="mbr-text item-wrap">Perguntas frequentes</li>
+                            <a href="{% url 'contacto' %}">
+                                <li class="mbr-text item-wrap">Entre em contato conosco</li>
+                            </a>
+                            <li class="mbr-text item-wrap"><a href="{% url 'blog' %}" style="color: #aaa;">Notícias</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7">Empresa</h5>
+                        <ul class="list mbr-fonts-style display-4"><p><span style="font-size: 1.1rem;">Sobre nós</span></p><a href="{% url 'contacto' %}">
+                            <p style="color: #aaa;">Contacto</p>
+                        <p style="color: #aaa;">Onde estamos?</p></ul></a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7"><strong>Soluções</strong></h5>
+                        <ul class="list mbr-fonts-style display-4">
+                            <li class="mbr-text item-wrap">Gestão de Pedidos</li>
+                            <li class="mbr-text item-wrap">Gestão de Stocks</li>
+                            <li class="mbr-text item-wrap">Logística</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7"><strong>Jurídico</strong></h5>
+                        <p class="mbr-text mbr-fonts-style mb-4 display-4">Termos de serviço<br>Informação legal Privacidade&nbsp;</p>
+                        <h5 class="mbr-section-subtitle mbr-fonts-style mb-3 display-7">
+                            <strong>Social</strong>
+                        </h5>
+                        <div class="social-row display-7">
+                            <div class="soc-item">
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <span class="mbr-iconfont socicon-facebook socicon"></span>
+                                </a>
+                            </div>
+                            <div class="soc-item">
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <span class="mbr-iconfont socicon-instagram socicon"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section><section style="background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;"><a href="#" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a><p style="flex: 0 0 auto; margin:0; padding-right:1rem;"><a href="https://mobirise.site/c" style="color:#aaa;"></a>This web page was created with Mobirise and Django</p></section><script src="{% static 'assets/web/assets/jquery/jquery.min.js' %}"></script>  <script src="{% static 'assets/popper/popper.min.js' %}"></script>  <script src="{% static 'assets/tether/tether.min.js' %}"></script>  <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>  <script src="{% static 'assets/smoothscroll/smooth-scroll.js' %}"></script>  <script src="{% static 'assets/dropdown/js/nav-dropdown.js' %}"></script>  <script src="{% static 'assets/dropdown/js/navbar-dropdown.js' %}"></script>  <script src="{% static 'assets/touchswipe/jquery.touch-swipe.min.js' %}"></script>  <script src="{% static 'assets/theme/js/script.js' %}"></script>  
+    
+    
+    </body>
+</html>

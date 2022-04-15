@@ -1,0 +1,85 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+  <section class="form5 cid-sIZzfMOdgC" id="form5-2" style="padding: 5%;">
+    
+    
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Entre em contacto connosco</strong></h3>
+            
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+
+                <form action="" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name">{% csrf_token %}
+                    <input type="hidden" name="email" data-form-email="true" value="Iuqbfknw8mY5B85pumQvHg0Nv/Ugvz0XmFJFHe788HNtxuA5K/9+eOgAn/lsT4YsIJzbm9Qrpj0E2gOQnUNa/f0Zr+WeHwrdwHtjmfuEXYnjetMevGanXZO+AcvqGKIu">
+                    <!--MENSAGEM DE STATUS DO ENVIO-->
+                    <div class="row">
+                    {% if 'valid' in request.GET %}
+                        <div class="alert alert-success col-12">Obrigado por preencher o Formulário!</div>
+                    {% elif 'notvalid' in request.GET %}
+                        <div data-form-alert-danger="" class="alert alert-danger col-12">Oops...! Houve algum problema ao enviar o formulário!</div>
+                    {% endif %}
+                    </div>
+
+                    <div class="dragArea row">
+                        <div class="col-md col-sm-12 form-group" data-for="name">
+                            <input type="text" name="name" placeholder="Name" data-form-field="name" class="form-control" value="" id="name-form5-2">
+                        </div>
+                        <div class="col-md col-sm-12 form-group" data-for="email">
+                            <input type="email" name="email" placeholder="E-mail" data-form-field="email" class="form-control" value="" id="email-form5-2">
+                        </div>
+                        <div class="col-12 form-group" data-for="url">
+                            <input type="text" name="Assunto" placeholder="Assunto" data-form-field="text" class="form-control" value="" id="text-form5-2">
+                        </div>
+                        <div class="col-12 form-group" data-for="textarea">
+                            <textarea name="textarea" placeholder="Mensagem" data-form-field="textarea" class="form-control" id="textarea-form5-2"></textarea>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn"><button type="submit" class="btn btn-primary display-4">Enviar Mensagem</button></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contacts3 map1 cid-sIZzNAbD9L" id="contacts3-4" style="padding: 5%;">
+
+    
+    
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"></h3>
+            <h4 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2 display-5">Nosso Contacto e Localização</h4>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="card col-12 col-md-6">
+                <div class="card-wrapper">
+                    <div class="text-wrapper">
+                        <h6 class="card-title mbr-fonts-style mb-1 display-5"><strong>Telefone</strong></h6>
+                        <p class="mbr-text mbr-fonts-style display-7">
+                            <a href="tel:999999999" class="text-primary">0 (000) 000 000 999</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="card-wrapper">
+                    <div class="text-wrapper">
+                        <h6 class="card-title mbr-fonts-style mb-1 display-5">
+                            <strong>Email</strong>
+                        </h6>
+                        <p class="mbr-text mbr-fonts-style display-7">
+                            <a href="mailto:gastronumo@gmail.com" class="text-primary">gastronumo@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="map-wrapper col-12 col-md-6">
+                <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDk89J4FSunMF33ruMVWJaJht_Ro0kvoXs&amp;q=Lisboa Cascais" allowfullscreen=""></iframe></div>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+{% endblock %}

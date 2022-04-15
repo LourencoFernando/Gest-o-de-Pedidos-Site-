@@ -1,0 +1,52 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+  <section class="features10 cid-sIVFBuc7XC" id="features11-0">
+    <!---->
+    
+    
+    <div class="container">
+        <div class="title" style="padding: 3%;">
+            <h3 class="mbr-section-title mbr-fonts-style mb-4 display-2">
+                <strong>Lista de Serviços</strong>
+            </h3>
+            
+        </div>
+        {% if Serviços %}
+            {% for serviço in Serviços %}
+                <div class="card" style="padding: 3%;">
+                    <div class="card-wrapper">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-3">
+                                <div class="image-wrapper">
+                                    <img src="{{serviço.imagem.url}}" alt="Serviços" title="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md">
+                                <div class="card-box">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="top-line">
+                                                <h4 class="card-title mbr-fonts-style display-5"><strong>{{serviço.título}}</strong></h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="bottom-line">
+                                                <p class="mbr-text mbr-fonts-style m-0 display-7">{{serviço.conteúdo}}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                            
+            {% endfor %}
+        {% else %}
+                <h4 class="card-title mbr-fonts-style display-5" style="color: red;"><strong>Ainda não foi registado Nenhum Serviço :(</strong></h4>
+        {% endif %}
+    </div>
+</section>
+{% endblock %}
